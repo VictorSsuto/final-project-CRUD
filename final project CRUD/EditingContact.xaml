@@ -1,0 +1,43 @@
+﻿<Window x:Class="final_project_CRUD.EditingContact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project_CRUD"
+        mc:Ignorable="d"
+                Title="Editing Contact" Height="300" Width="250" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Background="#FF1E1E1E">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Foreground="White" Content="First Name:" HorizontalAlignment="Right" Margin="0,0,0,3" VerticalAlignment="Center" Width="Auto" FontSize="15"/>
+        <TextBox Foreground="White" x:Name="FirstName" HorizontalAlignment="Center" Height="20" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Width="100" Grid.Column="1" FontSize="12" Background="#FF686868"/>
+
+        <Label Foreground="White" Content="Last Name:" HorizontalAlignment="Right" Margin="0,0,0,3" VerticalAlignment="Center" Width="Auto" FontSize="15" Grid.Row="1"/>
+        <TextBox Foreground="White" x:Name="LastName" HorizontalAlignment="Center" Height="20" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Width="100" Grid.Column="1" Grid.Row="1" FontSize="12" Background="#FF686868"/>
+
+        <Label Foreground="White" Content="Age:" HorizontalAlignment="Right" Margin="0,0,0,3" VerticalAlignment="Center" Width="Auto" FontSize="15" Grid.Row="2"/>
+        <TextBox Foreground="White" x:Name="Age" HorizontalAlignment="Center" Height="20" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Width="100" Grid.Column="1" Grid.Row="2" FontSize="12" Background="#FF686868"/>
+
+        <Label Foreground="White"  Content="Email:" HorizontalAlignment="Right" Margin="0,0,0,3" VerticalAlignment="Center" Width="Auto" FontSize="15" Grid.Row="3"/>
+        <TextBox Foreground="White" x:Name="Email" HorizontalAlignment="Center" Height="20" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Width="100" Grid.Column="1" Grid.Row="3" FontSize="12" Background="#FF686868"/>
+
+        <Label Foreground="White"  Content="Phone Number:" HorizontalAlignment="Right" Margin="0,0,0,3" VerticalAlignment="Center" Width="Auto" FontSize="15" Grid.Row="4"/>
+        <TextBox Foreground="White" x:Name="PhoneNumber" HorizontalAlignment="Center" Height="20" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Width="100" Grid.Column="1" Grid.Row="4" FontSize="12" Background="#FF686868"/>
+
+        <Button Grid.Column="1" Grid.Row="5" Width="100" Height="30" Click="EditContact_Clicked" Style="{StaticResource ConfirmButton}">
+            <StackPanel>
+                <TextBlock>Update Contact</TextBlock>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

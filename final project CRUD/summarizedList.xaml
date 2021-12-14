@@ -1,0 +1,52 @@
+﻿<Window x:Class="final_project_CRUD.summarizedList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project_CRUD"
+        mc:Ignorable="d"
+        Title="summarizedList" Height="100" Width="550">
+    <Grid>
+        <ListView x:Name="ViewDetailsList" HorizontalAlignment="Left" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Background="#FF1E1E1E" SelectionChanged="ViewDetailsList_SelectionChanged">
+            <ListView.View>
+                <GridView ColumnHeaderContainerStyle="{StaticResource ListViewHeader}">
+                    <GridViewColumn Header="First Name" Width="105">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding FirstName}" Foreground="CadetBlue" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Last Name" Width="105">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding LastName}" Foreground="CadetBlue" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Age" Width="40">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Age}" Foreground="CadetBlue" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Email" Width="160">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Email}" Foreground="CadetBlue" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Phone Number" Width="120">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding PhoneNumber}" Foreground="CadetBlue" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

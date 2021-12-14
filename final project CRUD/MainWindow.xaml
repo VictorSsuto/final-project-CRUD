@@ -1,0 +1,55 @@
+﻿<Window x:Class="final_project_CRUD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:final_project_CRUD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="94*"/>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="294*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.RowSpan="4" Background="#FF1E1E1E">
+            <UniformGrid Rows="4">
+                <Button Click="Create_Clicked" Style="{StaticResource CRUD}">
+                    <StackPanel>
+                        <Image Source="Create.png" Height="20"/>
+                        <TextBlock Margin="0,0,0,5">Create Contact</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="View_Clicked" Style="{StaticResource CRUD}">
+                    <StackPanel>
+                        <Image Source="View.png" Height="20"/>
+                        <TextBlock Margin="0,0,0,5">View Contact</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="Edit_Clicked" Style="{StaticResource CRUD}">
+                    <StackPanel>
+                        <Image Source="Edit.png" Height="20"/>
+                        <TextBlock Margin="0,0,0,5">Edit Contact</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="Delete_Clicked" Style="{StaticResource CRUD}">
+                    <StackPanel>
+                        <Image Source="Delete.png" Height="20"/>
+                        <TextBlock Margin="0,0,0,5">Delete Contact</TextBlock>
+                    </StackPanel>
+                </Button>
+            </UniformGrid>
+        </DockPanel>
+        <ContentControl Content="{Binding}" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="4">
+            <ContentControl.Background>
+                <ImageBrush/>
+            </ContentControl.Background>
+        </ContentControl>
+    </Grid>
+</Window>
