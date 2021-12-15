@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,8 +64,8 @@
     <Compile Include="EditingContact.xaml.cs">
       <DependentUpon>EditingContact.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\cratePage.xaml.cs">
-      <DependentUpon>cratePage.xaml</DependentUpon>
+    <Compile Include="Pages\createPage.xaml.cs">
+      <DependentUpon>createPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\deletePage.xaml.cs">
       <DependentUpon>deletePage.xaml</DependentUpon>
@@ -98,7 +99,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\cratePage.xaml">
+    <Page Include="Pages\createPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

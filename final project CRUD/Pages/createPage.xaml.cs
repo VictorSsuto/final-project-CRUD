@@ -17,9 +17,9 @@ namespace final_project_CRUD.PAges
     /// <summary>
     /// Interaction logic for cratePage.xaml
     /// </summary>
-    public partial class cratePage : Window
+    public partial class createPage : Window
     {
-        public cratePage()
+        public createPage()
         {
             InitializeComponent();
         }
