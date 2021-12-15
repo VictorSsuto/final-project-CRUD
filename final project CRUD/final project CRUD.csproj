@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ContactCollection.cs" />
     <Compile Include="CreateContact.xaml.cs">
       <DependentUpon>CreateContact.xaml</DependentUpon>
     </Compile>
