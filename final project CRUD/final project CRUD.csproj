@@ -59,6 +59,7 @@
     <Compile Include="CreateContact.xaml.cs">
       <DependentUpon>CreateContact.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseHandler.cs" />
     <Compile Include="EditingContact.xaml.cs">
       <DependentUpon>EditingContact.xaml</DependentUpon>
     </Compile>
